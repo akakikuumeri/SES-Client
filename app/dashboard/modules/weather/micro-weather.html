@@ -1,0 +1,37 @@
+<md-card ng-controller='microWeather' layout-fill>
+  <md-card-title flex="nogrow">
+    <md-card-title-text>
+      <span class="md-title">Weather today</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content class="microweather" layout-align="center center" layout-padding flex>
+    <md-grid-list
+      md-cols="3"
+      md-row-height="44px" layout-align="start center" flex>
+      <md-grid-tile md-rowspan="2" md-colspan="2">
+        <span class="temperature">{{temp}}&deg;C </span>
+      </md-grid-tile>
+      <md-grid-tile md-rowspan="1" md-colspan="1" layout-align="start">
+        <div flex layout="column">
+          <h3>{{city}}</h3>
+          <p>City</p>
+        </div>
+      </md-grid-tile>
+      <md-grid-tile md-rowspan="1" md-colspan="1" layout-align="start">
+        <md-list flex layout="column">
+          <h3>{{mintemp}}&deg;C</h3>
+          <p>Min</p>
+        </md-list>
+      </md-grid-tile>
+      <md-grid-tile md-rowspan="1" md-colspan="2">
+        <img ng-src="{{icon}}"/>
+      </md-grid-tile>
+      <md-grid-tile md-rowspan="1" md-colspan="1" layout-align="start">
+        <md-list flex layout="column">
+          <div class="md-list-item-text"><h3>{{maxtemp}}&deg;C</h3></div>
+          <div class="md-list-item-text"><p>Max</p></div>
+        </md-list>
+      </md-grid-tile>
+    </md-grid-list>
+  </md-card-content>
+</md-card>

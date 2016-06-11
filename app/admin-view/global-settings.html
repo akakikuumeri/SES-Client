@@ -1,0 +1,28 @@
+<md-content layout-padding class="md-inline-form" layout="column" layout-align="start center" flex>
+  <div style="max-width: 600px">
+    <form>
+      <md-input-container class="md-block">
+        <label>Odoo url:</label>
+        <input type="text" name="url" size="60" ng-model="newSettings.odoo_url">
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Weather token:</label>
+        <input type="text" name="token" size="60" ng-model="newSettings.weather_token">
+      </md-input-container>
+      <div layout-gt-xs="row" layout-sm-mar>
+        <md-input-container class="md-block" flex-gt-xs>
+          <label>Gitlab token:</label>
+          <input type="text" name="token" size="60" ng-model="newSettings.gitlab_token">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-xs>
+          <label>Gitlab base url:</label>
+          <input type="text" name="url" size="60" ng-model="newSettings.gitlab_url">
+        </md-input-container>
+      </div>
+    </form>
+  </div>
+  <div>
+    <md-button class="md-raised" ng-click="adminview.saveSettings()">Save</md-button>
+    <p ng-show="success" style="color:green; margin-top: 5px"> {{success}}</p>
+  </div>
+</md-content>

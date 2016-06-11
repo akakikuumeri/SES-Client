@@ -1,0 +1,66 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
+@import ../resources/bower_components/bootstrap-sass/assets/stylesheets/bootstrap
+@import "../resources/bower_components/chartist/dist/scss/chartist"
+@import reset
+@import variables
+
+$background-color: #e5e5e5
+
+$color-blue: #4F93CC
+$color-blue-light: #32D4F7
+
+$color-green: #66B75d
+$color-green-light: #A2ED84
+
+$color-magenta: #C900E1
+$color-magenta-light: #F950FF
+
+$color-gray: #484B5B
+$color-gray-light: #A4b9CF
+
+$dashboard-columns: 3
+$dashboard-rows: 2
+$dashboard-spacing: 16px
+
+$header-height: 52px
+$header-spacing-y: 6px
+
+*
+    box-sizing: border-box
+
+html, body, main, main > [ui-view]
+    height: 100%
+    width: 100%
+
+body
+    font-size: 16px
+    font-family: 'Roboto Condensed', sans-serif
+    // background-color: $background-color !important
+
+@import mixins
+@import dashboard
+@import admin
+@import chart
+@import gitlab
+
+ses-auth-status
+    .status-failed
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-content: center
+        height: 100%
+        justify-content: center
+
+        .glyphicon
+            margin-top: -3em
+            display: block
+            font-size: 3em
+            text-align: center
+
+        .message
+            margin-top: 20px
+
+        &.micro .glyphicon
+            margin-top: 0
+            font-size: 4em

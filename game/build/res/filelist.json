@@ -1,0 +1,21 @@
+[
+  "res/entity/entity_force_arrow.json",
+  "res/entity/entity_goal_blue.json",
+  "res/entity/entity_goal_red.json",
+  "res/entity/entity_player_blue.json",
+  "res/entity/entity_player_red.json",
+  "res/entity/entity_polygon_wall.json",
+  "res/entity/entity_puck.json",
+  "res/entity/entity_score_blue.json",
+  "res/entity/entity_score_red.json",
+  "res/entity/entity_wall.json",
+  "res/entity/entity_world.json",
+  "res/maps/gameBoard.png",
+  "res/maps/testmap-old.json",
+  "res/maps/testmap.json",
+  "res/maps/testmap2.json",
+  "res/config/random.json",
+  "res/config/test.json",
+  "res/sprite/enemy/anim_enemy_idle.json",
+  "res/sprite/player/anim_player_idle.json"
+]

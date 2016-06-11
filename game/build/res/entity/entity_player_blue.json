@@ -1,0 +1,29 @@
+{
+  "component_configuration":{
+  },
+  "component_data":{
+    "collider_color": "0x454593",
+    "team": "blue"
+  },
+  "physics":{
+    "bodyType": "circle",
+    "options": {
+      "frictionless":true,
+      "render": true,
+      "damping": 0.2,
+      "restitution": 0.6
+    }
+  },
+  "scripts":[
+    {
+      "name" : "forceInputScript",
+      "parameters":{
+        "team":"blue"
+      }
+    },
+    {
+      "name" : "resetPositionScript",
+      "parameters":{}
+    }
+  ]
+}

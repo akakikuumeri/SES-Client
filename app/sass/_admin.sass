@@ -1,0 +1,150 @@
+$module-icon-size: 128px
+
+.admin-view
+
+.channel-manager
+  display: flex
+  flex-direction: column
+  max-width: 10em
+  height: 100%
+  float: left
+  padding: 0.5em
+
+.channel-actions
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  padding: 0 0.5em
+  .label
+    color: rgba(0, 0, 0, 0.4)
+    text-align: left
+
+.module-manager
+  padding: 0.5em
+  min-width: 27em
+  max-width: 27em
+  background: white
+
+.module-list
+  display: inline-flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.channel-name-header
+  text-align: center
+  display: block
+  padding: 0.5em
+
+.module-name-span
+  text-shadow: 1px 2px 4px black
+  color: white
+  text-align: center
+  width: $module-icon-size
+  position: absolute
+  bottom: 0.25em
+
+.module-name-small
+  @extend module-name-span
+  font-size: 0.5em
+  position: relative
+
+.config-area
+  resize: none
+  width: 100%
+
+.add-module-div
+  opacity: 0.5
+
+  &:hover
+    opacity: 1
+
+  &:active
+    opacity: 0.8
+
+.module-list-item
+  margin-right: 0.5em
+  position: relative
+
+  img
+    width: $module-icon-size
+    height: $module-icon-size
+
+.module-selection
+  @extend module-list-item
+  position: relative
+  opacity: 0.5
+
+  &:hover
+    opacity: 1
+
+  &:active
+    opacity: 0.8
+
+.config-setting
+  display: flex
+  flex-direction: row
+  padding: 0.25em
+
+  label
+    width: 50%
+    text-align: left
+    line-height: 2.5em
+
+  input
+    width: 50%
+    height: 2.5em
+
+.setting-odd
+  background-color: #AAAAAA
+
+.setting-even
+  background-color: #DDDDDD
+
+.modal-control
+  text-align: center
+
+  button
+    text-align: center
+
+.btn-remove-module
+  opacity: 0
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 1000
+  width: 1.5em
+  height: 1.5em
+
+  &:hover
+    opacity: 1
+
+.modal-title
+  display: inline
+
+.btn-dismiss
+  position: absolute
+  top: 0
+  right: 0
+  margin: 0.75em
+
+.btn-module-settings
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1000
+  width: 1.5em
+  height: 1.5em
+
+  &:hover
+    opacity: 1
+
+.module-list-margin
+  margin-bottom: 1em
+
+.btn-channel-ctrl
+  margin-top: 0.5em
+
+.modal-input
+  width: 100%
+
+.modal-padded-form
+  padding: 1em

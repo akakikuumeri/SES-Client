@@ -1,0 +1,21 @@
+{
+  "component_configuration":{
+  },
+  "component_data":{
+    "collider_color":"0x666666",
+    "tags": [
+      "static",
+      "wall",
+      "test"
+    ]
+  },
+  "physics":{
+    "bodyType": "polygon",
+    "options": {
+      "treatment":"static",
+      "render": true
+    }
+  },
+  "scripts":[
+  ]
+}

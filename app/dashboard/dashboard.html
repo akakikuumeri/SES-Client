@@ -1,0 +1,28 @@
+<md-content ng-show="!dashboard.isMacro" class="micro-views md-hue-1">
+  <ses-header channel="dashboard.channel"></ses-header>
+  <ng-include ng-if="dashboard.windowWidth <= 600" src="'common/templates/dashboard-no-pagination.html'"></ng-include>
+  <ng-include ng-if="dashboard.windowWidth > 600" src="'common/templates/dashboard-pagination.html'" class="full-height"></ng-include>
+</md-content>
+
+<md-content ng-show="dashboard.isMacro" layout-fill>
+
+  <div ui-view layout-fill></div>
+  <div ng-if="!dashboard.isMacro" class="macro-placeholder"></div>
+
+  <div class="navi-left" ng-click="dashboard.prevButton()">
+    <span class="glyphicon glyphicon-menu-left"></span>
+  </div>
+
+  <div class="navi-right" ng-click="dashboard.nextButton()">
+    <span class="glyphicon glyphicon-menu-right"></span>
+  </div>
+
+  <div class="db-return-button" ng-click="dashboard.backToMicros()">
+    <!-- <span class="glyphicon glyphicon-th"></span> -->
+    <span><md-icon md-font-icon="android" alt="android"></md-icon></span>
+  </div>
+</md-content>
+
+<div class="db-slideshow-button" ng-click="dashboard.toggleSlideshow()" ng-class="{ 'active': dashboard.slideshowMode }">
+  <span class="glyphicon glyphicon-expand"></span>
+</div>

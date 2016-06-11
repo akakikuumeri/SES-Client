@@ -1,0 +1,15 @@
+<md-card layout-fill>
+    <md-card-title flex="nogrow">
+        <span class="md-title">Opportunities</span>
+    </md-card-title>
+    <md-card-content>
+        <ses-auth-status failed="!loggedIn" micro="true"></ses-auth-status>
+        <chartist ng-if="loggedIn" class="ct-chart opportunities-chart"
+                  chartist-data="chartData"
+                  chartist-chart-type="{{config.dataOptions.chartType}}"
+                  chartist-chart-options="config.chartOptionsMicro"
+                  chartist-events="chartEvents"
+                  ng-if="chartData.series[0].length">
+        </chartist>
+    </md-card-content>
+</md-card>

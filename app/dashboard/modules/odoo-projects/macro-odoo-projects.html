@@ -1,0 +1,22 @@
+<h1>Projects</h1>
+<!-- <h1>{{chartData}}</h1> -->
+<ses-auth-status failed="!loggedIn"></ses-auth-status>
+
+<chartist ng-if="loggedIn" class="ct-chart projects-chart" chartist-data="chartData"
+    chartist-chart-type="{{config.chartType}}"
+    ng-if="chartData.series[0].length"
+    chartist-chart-options="config.chartOptionsMacro"
+    chartist-events="chartEvents"></chartist>
+
+<center>
+    <div ng-if="loggedIn" ng-repeat="i in interval">
+        <input type="radio"
+            ng-click="$parent.update()"
+            ng-model="$parent.config.dataOptions.dateInterval"
+            value="{{i.value}}">{{i.name}}
+        </input>
+
+        <!-- <button ng-click="$parent.changeInterval(i.name)">{{i.name}}</button> -->
+    </div>
+</center>
+<!-- <h1>{{config}}</h1> -->

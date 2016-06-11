@@ -1,0 +1,14 @@
+<!-- <div class="container">
+  <div
+      ng-repeat="module in dashboard.modules"
+      ses-micro-module=module
+      class="micro-module"></div>
+</div> -->
+
+<md-content class="md-hue-1">
+  <md-grid-list md-cols="1" md-row-height="4:3" md-gutter="12px">
+    <md-grid-tile ng-repeat="module in dashboard.modules">
+      <div ses-micro-module=module class="micro-module" layout-fill></div>
+    </md-grid-tile>
+  </md-grid-list>
+</md-content>

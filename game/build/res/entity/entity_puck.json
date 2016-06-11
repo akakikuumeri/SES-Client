@@ -1,0 +1,23 @@
+{
+  "component_configuration":{
+  },
+  "component_data":{
+    "collider_color": "0x000000",
+    "tags":["puck"]
+  },
+  "physics":{
+    "bodyType": "circle",
+    "options": {
+      "frictionless":true,
+      "render": true,
+      "damping": 0.2,
+      "density": 0.4
+    }
+  },
+  "scripts":[
+    {
+      "name" : "resetPositionScript",
+      "parameters":{}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<h1>Gitlab Projects Milestone Completion</h1>
+<div class="subtitle">Projects without milestones are not displayed</div>
+
+<ses-auth-status failed="loginRequired"></ses-auth-status>
+
+<div ng-if="!loginRequired">
+    <section ng-repeat="project in projects"><!--Create one html block for each project received from API-->
+        <div class="macro-gitlab-project" ng-if="project.milestones.length > 0"><!--if has milestones at all-->
+            <h2>{{project.name}}</h2> <h2 class="percentage"> {{project.milestonePercentage.toFixed(0)}} %</h2>
+            <!--toFixed gets rid of decimals-->
+            <div class="milestones-container">
+                <div  class="milestones-list">
+                    <ul>
+                        <li ng-repeat="milestone in project.milestones"><!--list some attributes-->
+                            <div ng-if="milestone.state !== 'active'"><span class="ok">Done:</span></div>
+                            <div ng-if="milestone.state == 'active'"><span class="ng">Not Done:</span></div>
+                            <div class="title">{{milestone.title}}</div>
+                            <div class="description">{{milestone.description}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

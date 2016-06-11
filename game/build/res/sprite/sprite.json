@@ -1,0 +1,140 @@
+{
+    "frames": {
+        "arrow": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 510,
+                "h": 256
+            },
+            "rotated": false,
+            "trimmed": false,
+            "duration": 100,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 510,
+                "h": 256
+            },
+            "sourceSize": {
+                "w": 510,
+                "h": 256
+            }
+        },
+        "chest": {
+            "frame": {
+                "x": 276,
+                "y": 261,
+                "w": 16,
+                "h": 16
+            },
+            "rotated": false,
+            "trimmed": false,
+            "duration": 100,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+            },
+            "sourceSize": {
+                "w": 16,
+                "h": 16
+            }
+        },
+        "debug_1": {
+            "frame": {
+                "x": 0,
+                "y": 261,
+                "w": 64,
+                "h": 64
+            },
+            "rotated": false,
+            "trimmed": false,
+            "duration": 100,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 64
+            },
+            "sourceSize": {
+                "w": 64,
+                "h": 64
+            }
+        },
+        "debug_2": {
+            "frame": {
+                "x": 69,
+                "y": 261,
+                "w": 64,
+                "h": 64
+            },
+            "rotated": false,
+            "trimmed": false,
+            "duration": 100,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 64
+            },
+            "sourceSize": {
+                "w": 64,
+                "h": 64
+            }
+        },
+        "debug_3": {
+            "frame": {
+                "x": 138,
+                "y": 261,
+                "w": 64,
+                "h": 64
+            },
+            "rotated": false,
+            "trimmed": false,
+            "duration": 100,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 64
+            },
+            "sourceSize": {
+                "w": 64,
+                "h": 64
+            }
+        },
+        "debug_4": {
+            "frame": {
+                "x": 207,
+                "y": 261,
+                "w": 64,
+                "h": 64
+            },
+            "rotated": false,
+            "trimmed": false,
+            "duration": 100,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 64
+            },
+            "sourceSize": {
+                "w": 64,
+                "h": 64
+            }
+        }
+    },
+    "meta": {
+        "app": "spritejsonformat.js",
+        "image": "sprite.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 510,
+            "h": 325
+        },
+        "scale": 1
+    }
+}

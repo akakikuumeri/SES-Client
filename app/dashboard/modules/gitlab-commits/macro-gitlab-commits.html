@@ -1,0 +1,15 @@
+<h1>Gitlab commits</h1>
+<ses-auth-status failed="loginRequired"></ses-auth-status>
+
+<div ng-if="!loginRequired">
+    <div class="projects">
+        <section ng-repeat="project in projects">
+            <h2>{{project.name_with_namespace}}</h2>
+
+            <div class="commit" ng-repeat="commit in project.latestCommits">
+                <div class="message">{{commit.title}}</div>
+                <div class="meta">{{commit.author_name}} committed at {{commit.created_at | date}}}</div>
+            </div>
+        </section>
+    </div>
+</div>

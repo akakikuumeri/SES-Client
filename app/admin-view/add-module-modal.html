@@ -1,0 +1,14 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{title}}</h3>
+    <button class="btn btn-default btn-dismiss" ng-click="cancel()">X</button>
+</div>
+<div class="modal-body">
+    <form class="modal-padded-form">
+        <div class="form-group module-list">
+            <div class="module-selection" ng-repeat="module in modules" ng-click="confirm($index)">
+                <img src="{{module.image_url}}" alt="{{module.module}}"></img>
+                <span class="module-name-span">{{module.label}}</span>
+            </div>
+        </div>
+    </form>
+</div>

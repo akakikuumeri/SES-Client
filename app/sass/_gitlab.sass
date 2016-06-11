@@ -1,0 +1,176 @@
+ses-gitlab-macro, ses-gitlab-micro
+    section
+        margin-bottom: 15px
+
+        ul
+            margin-top: 0.25em
+            list-style: outside
+            padding-left: 25px
+
+        li
+            color: lightgreen
+
+.macro-gitlab-project
+    display: block
+    float: left
+    height: 60vh
+    margin: 2%
+    padding: 5px
+    overflow: hidden
+    position: relative
+    width: 28%
+    box-shadow: 2px 2px 3px #bbb
+    background-color: $primary1
+
+    h2
+        color: white
+        text-weight: bold
+        font-size: large
+
+    //these following two allow for scrolling and hides scrollbars inside the overflow of the containing div
+    //these dont work 100% yet so need to fix later
+.milestones-container, .issues-container
+    height: 100%
+    width: 100%
+    overflow: hidden
+    //border: 2px pink
+.milestones-list, .issues-list
+    //border: 1px black
+    height: 100%
+    width: 100%
+    overflow: hidden
+    padding-right: 20px
+
+
+
+
+
+.micro-gitlab-project
+    display: block
+    float: left
+    width: 100%
+    margin: 8px
+    padding: 10px
+    position: relative
+    background-color: $primary1
+
+    md-progress-linear
+        height: 42px
+        position: absolute
+        top: 0
+        left: 0
+        // z-index: 0
+
+        .md-container
+            height: 42px
+            background-color: #78909C
+
+            .md-bar
+                height: 42px
+
+    .text-container
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+    h1
+        float: right
+        color: white
+        font-size: 300%
+
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+    h2
+        float: left
+        color: white
+        text-weight: bold
+        font-size: large
+        position: relative
+        z-index: 10
+
+    span
+        position: relative
+        z-index: 10
+        margin-right: 6px
+        color: white
+
+    p
+        clear: left
+        color: white
+        font-size: medium
+
+.micro-gitlab-issues-project
+    display: flex
+    justify-content: space-between
+    float: left
+    width: 100%
+    position: relative
+    padding: 2%
+    // margin: 0.2em
+
+    span
+        margin-right: 1em
+
+.primary-color
+    background-color: $primary1
+    color: white
+
+.light-grey
+    background-color: #ddd
+
+
+ses-gitlab-macro
+    .percentage
+        font-size: 500%
+        text-shadow: 1px 1px 2px black
+        white-space: nowrap //dont allow line breaks
+
+.description
+    font-size: small
+    color: gray
+
+.issues-title
+    font-size: medium
+    color: lightgreen
+
+.issues-description
+    font-size: medium
+    color: lightgray
+
+.issues-date
+    font-size: medium
+    color: white
+
+
+.ok
+    color: white
+
+.ng
+    color: orangered
+
+ses-gitlab-micro
+    .gitlab-project
+        margin: 5px
+        padding: 5px
+        width: 50%
+        height: 20px
+
+.ses-gitlab-commits-micro
+
+    .projects
+        display: flex
+        flex-basis: 0
+        flex-wrap: wrap
+
+        section
+            border: medium solid $primary1
+            width: calc(50% - 10px)
+            margin: 5px
+            padding: 15px
+            overflow: hidden
+
+            h2
+                // font-size: 1.25em
+                margin-bottom: 0.6em

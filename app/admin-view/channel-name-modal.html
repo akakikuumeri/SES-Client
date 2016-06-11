@@ -1,0 +1,19 @@
+<!--Modal template for editing channel-->
+<div class="modal-header">
+    <h3 class="modal-title">{{title}}</h3>
+    <button class="btn btn-default btn-dismiss" ng-click="cancel()">X</button>
+</div>
+<div class="modal-body">
+    <form class="modal-padded-form">
+        <div class="form-group">
+            <label for="channel_name">Channel name:</label>
+            <input class="form-control" type="text" id="channel_name" ng-model="channel.label" ng-value="channel.label">
+            <label for="channel_description">Description:</label>
+            <input class="form-control" type="text" id="channel_description" ng-model="channel.description" ng-value="channel.description">
+        </div>
+        <div class="modal-control">
+            <button class="btn btn-default btn-confirm" ng-click="confirm(channel.label, channel.description)">Confirm</button>
+            <button class="btn btn-default btn-cancel" ng-click="cancel()">Cancel</button>
+        </div>
+    </form>
+</div>

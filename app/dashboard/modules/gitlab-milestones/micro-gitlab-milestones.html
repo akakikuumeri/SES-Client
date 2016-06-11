@@ -1,0 +1,21 @@
+<md-card layout-fill>
+  <md-card-title flex="nogrow">
+    <md-card-title-text>
+      <span class="md-title">Gitlab Milestones</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
+    <ses-auth-status failed="loginRequired" micro="true"></ses-auth-status>
+    <md-content ng-if="!loginRequired" layout-fill>
+      <section ng-repeat="project in projects">
+        <div class="micro-gitlab-project" ng-if="project.milestones.length > 0" flex>
+          <md-progress-linear class="md-hue-2" md-mode="determinate" value="{{project.milestonePercentage}}"></md-progress-linear>
+          <div class="text-container">
+            <span>{{project.name}}</span>
+            <span>{{project.milestones.length}}</span>
+          </div>
+        </div>
+      </section>
+    </md-content>
+  </md-card-content>
+</md-card>

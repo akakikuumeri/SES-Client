@@ -1,0 +1,14 @@
+<md-content class="md-hue-1 border-bottom">
+  <md-tabs md-dynamic-height md-center-tabs md-swipe-content="true" md-align-tabs="bottom">
+    <md-tab ng-repeat="group in dashboard.groupedModules" label="{{'page ' + ($index + 1)}}">
+      <md-content layout-padding class="md-hue-1">
+        <md-grid-list md-cols="3" md-cols-xs="1" md-cols-sm="2" md-cols-md="3" md-row-height="4:3" md-gutter="24px">
+          <md-grid-tile ng-repeat="module in group">
+            <div ses-micro-module=module class="micro-module" layout-fill></div>
+          </md-grid-tile>
+          <md-grid-tile ng-repeat="i in dashboard.getNumber(6 - group.length) track by $index"></md-grid-tile>
+        </md-grid-list>
+      </md-content>
+    </md-tab>
+  </md-tabs>
+</md-content>

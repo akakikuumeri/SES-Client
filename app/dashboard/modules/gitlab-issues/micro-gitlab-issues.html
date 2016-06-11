@@ -1,0 +1,22 @@
+<md-card layout-fill>
+  <md-card-title flex="nogrow">
+    <md-card-title-text>
+      <span class="md-title">Gitlab Issues</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
+    <ses-auth-status failed="loginRequired" micro="true"></ses-auth-status>
+    <md-content ng-if="!loginRequired" layout-fill>
+      <section>
+        <div class="micro-gitlab-issues-project primary-color">
+          <span>Project</span>
+          <span>Issues</span>
+        </div>
+        <div ng-repeat="project in projects" class="micro-gitlab-issues-project light-grey" ng-if="project.issues.length > 0">
+          <span>{{project.name}}</span>
+          <span>{{project.issues.length}}</span>
+        </div>
+      </section>
+    </md-content>
+  </md-card-content>
+</md-card>

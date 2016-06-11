@@ -1,0 +1,17 @@
+{
+  "component_configuration":{
+  },
+  "component_data":{
+    "container":"ui",
+    "tags": [
+    ]
+  },
+  "scripts":[
+    {
+      "name" : "pointScript",
+      "parameters": {
+        "team":"red"
+      }
+    }
+  ]
+}

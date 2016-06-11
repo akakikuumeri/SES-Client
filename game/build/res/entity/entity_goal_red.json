@@ -1,0 +1,28 @@
+{
+  "component_configuration":{
+  },
+  "component_data":{
+    "collider_color":"0xababab",
+    "team":"red",
+    "tags": [
+      "static",
+      "wall",
+      "test"
+    ]
+  },
+  "physics":{
+    "bodyType": "rectangle",
+    "options": {
+      "treatment":"static",
+      "collisionFilter": 2
+    }
+  },
+  "scripts":[
+    {
+      "name" : "goalScript",
+      "parameters":{
+        "team":"red"
+      }
+    }
+  ]
+}

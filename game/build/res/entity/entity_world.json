@@ -1,0 +1,11 @@
+{
+  "component_configuration":{
+  },
+  "component_data":{
+  },
+  "scripts":[
+    {
+      "name" : "initializeWorld"
+    }
+  ]
+}

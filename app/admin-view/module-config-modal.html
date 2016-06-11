@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{title}}</h3>
+    <button class="btn btn-default btn-dismiss" ng-click="cancel()">X</button>
+</div>
+<div class="modal-body">
+    <form class="modal-padded-form">
+        <div class="form-group">
+            <textarea class="config-area" ng-bind="moduleConfig" ng-model="moduleConfig" rows=10 allow-tab></textarea>
+        </div>
+        <div class="modal-control">
+            <button class="btn btn-default btn-confirm" ng-click="confirm()">Confirm</button>
+            <button class="btn btn-default btn-cancel" ng-click="cancel()">Cancel</button>
+        </div>
+    </form>
+</div>

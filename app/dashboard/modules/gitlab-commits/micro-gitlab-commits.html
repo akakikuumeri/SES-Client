@@ -1,0 +1,22 @@
+<md-card layout-fill>
+  <md-card-title flex="nogrow">
+    <md-card-title-text>
+      <span class="md-title">Gitlab Commits</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
+    <ses-auth-status failed="loginRequired" micro="true"></ses-auth-status>
+
+    <div class="ses-gitlab-commits-micro" ng-if="!loginRequired">
+        <div class="projects">
+            <section ng-repeat="project in projects">
+                <h2>{{project.name_with_namespace}}</h2>
+                <div class="commit" ng-repeat="commit in project.latestCommits">
+                    <!--<div class="message">{{commit.title}}</div>
+                    <div class="meta">{{commit.author_name}} committed at {{commit.created_at | date}}</div>-->
+                </div>
+            </section>
+        </div>
+    </div>
+  </md-card-content>
+</md-card>

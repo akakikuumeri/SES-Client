@@ -1,0 +1,24 @@
+{
+  "urls": [
+    "sounds.ogg",
+    "sounds.mp3"
+  ],
+  "sprite": {
+    "audio_hit_noise": [
+      0,
+      250
+    ],
+    "audio_machine_beep": [
+      1100,
+      500
+    ],
+    "audio_melody_cool": [
+      2200,
+      2000
+    ],
+    "audio_melody_weird": [
+      4300,
+      2500
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+<h1>Gitlab Old Issues</h1>
+<div class="subtitle">Projects without open issues are not displayed</div>
+
+<ses-auth-status failed="loginRequired"></ses-auth-status>
+
+<div ng-if="!loginRequired">
+    <section ng-repeat="project in projects"><!--Create one html block for each project received from API-->
+        <div class="macro-gitlab-project" ng-if="project.issues.length > 0"><!--if has issues at all-->
+            <h2>{{project.name}}</h2>
+            <div class="issues-container">
+                <hr/>
+                <div class="issues-list">
+                    <ul>
+                        <li ng-repeat="issue in project.issues"><!--list some attributes-->
+                            <div class="issues-title">{{issue.title}}</div>
+                            <div class="issues-description">{{issue.description}}</div>
+                            <div class="issues-date">Last updated at: {{issue.updated_at | date}}</div>
+                            <hr/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

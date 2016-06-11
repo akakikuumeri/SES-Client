@@ -1,0 +1,25 @@
+<md-toolbar ng-controller="Core as core" class="md-primary md-hue-2">
+  <div class="md-toolbar-tools">
+    <div flex>
+      <img src="resources/images/AS_logo_dark_text_right.png" alt="Avoin Systems" class="logo" height="48px" ng-click="core.switchToMicro()">
+    </div>
+    <h1 ng-show="!channel">Super Entertainment System</h1>
+    <md-menu>
+      <md-button aria-label="Change channel" ng-click="$mdOpenMenu($event)">
+        {{channel.label}}  <span class="caret"></span>
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item ng-repeat="otherChannel in channels">
+          <md-button ui-sref="{ channelName: otherChannel.name }">{{otherChannel.label}}</md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+    <div flex>
+      <div layout="row" layout-align="end">
+        <md-button ng-click="core.checkLogin()">
+          <span class="glyphicon glyphicon-cog"></span>
+        </md-button>
+      </div>
+    </div>
+  </div>
+</md-toolbar>

@@ -1,0 +1,69 @@
+.ct-bar
+    stroke-width: 4%
+//
+// .ct-series-colors-1: $color-blue
+//
+// .ct-series-a
+//     .ct-bar
+//         stroke: $color-blue
+//
+// .ct-series-b
+//     .ct-bar
+//         stroke: $color-green
+//
+// .ct-series-b
+//     .ct-bar
+//         stroke: $color-magenta
+
+.ct-legend
+    position: relative
+    z-index: 10
+
+    li
+        position: relative
+        padding-left: 23px
+        margin-bottom: 3px
+
+
+    li:before
+        width: 12px
+        height: 12px
+        position: absolute
+        left: 0
+        content: ''
+        border: 3px solid transparent
+        border-radius: 2px
+
+    li.inactive:before
+        background: transparent
+
+    &.ct-legend-inside
+        position: absolute
+        top: 0
+        right: 0
+
+    @for $i from 0 to length($ct-series-colors)
+        .ct-series-#{$i}:before
+            background-color: nth($ct-series-colors, $i + 1)
+            border-color: nth($ct-series-colors, $i + 1)
+
+
+.ct-legend
+    .ct-series-0:before
+        background-color: $data1
+        border-color: $data1
+
+.ct-legend
+    .ct-series-1:before
+        background-color: $data2
+        border-color: $data2
+
+.ct-series.ct-series-a
+    .ct-bar
+        stroke-width: 4%
+        stroke: $data1
+
+.ct-series.ct-series-b
+    .ct-bar
+        stroke-width: 4%
+        stroke: $data2
